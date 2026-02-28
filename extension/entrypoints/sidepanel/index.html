@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev Browser</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="panel">
+      <header>
+        <h1>Dev Browser</h1>
+        <div class="toggle-row">
+          <label class="toggle">
+            <input type="checkbox" id="active-toggle" />
+            <span class="slider"></span>
+          </label>
+          <span id="status-text">Inactive</span>
+        </div>
+        <p id="connection-status" class="connection-status"></p>
+      </header>
+
+      <section class="config-section">
+        <h2>Relay URL</h2>
+        <div class="input-row">
+          <input type="text" id="relay-url" placeholder="ws://localhost:9222/extension" />
+          <button id="save-url">Save</button>
+        </div>
+      </section>
+
+      <section class="config-section">
+        <div class="toggle-row">
+          <label class="toggle small">
+            <input type="checkbox" id="auto-attach-toggle" />
+            <span class="slider"></span>
+          </label>
+          <span>Auto-attach new tabs</span>
+        </div>
+      </section>
+
+      <section class="tabs-section">
+        <h2>Browser Tabs</h2>
+        <div id="tabs-list" class="tabs-list">
+          <p class="empty-state">Activate to see tabs</p>
+        </div>
+      </section>
+    </div>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>

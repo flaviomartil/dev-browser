@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev Browser</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="popup">
+      <h1>Dev Browser</h1>
+      <div class="toggle-row">
+        <label class="toggle">
+          <input type="checkbox" id="active-toggle" />
+          <span class="slider"></span>
+        </label>
+        <span id="status-text">Inactive</span>
+      </div>
+      <p id="connection-status" class="connection-status"></p>
+      <div class="config-section">
+        <label class="config-label">Relay URL</label>
+        <input type="text" id="relay-url" class="config-input" placeholder="ws://localhost:9222/extension" />
+      </div>
+      <div class="toggle-row auto-attach-row">
+        <label class="toggle small">
+          <input type="checkbox" id="auto-attach-toggle" />
+          <span class="slider"></span>
+        </label>
+        <span class="config-label">Auto-attach</span>
+      </div>
+    </div>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>
