@@ -1,6 +1,10 @@
 # Dependencies
 node_modules/
 
+# Lock files
+package-lock.json
+bun.lock
+
 # Build output
 build/
 
