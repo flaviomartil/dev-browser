@@ -1,0 +1,21 @@
+{
+  "name": "dev-browser-marketplace",
+  "owner": {
+    "name": "Flavio Martil",
+    "email": "flavio@martil.com"
+  },
+  "plugins": [
+    {
+      "name": "dev-browser",
+      "source": "./",
+      "description": "Browser automation skill with persistent page state for developers and AI agents",
+      "strict": false,
+      "keywords": ["browser", "playwright", "automation", "testing", "debugging"],
+      "skills": ["./skills/dev-browser"]
+    }
+  ],
+  "metadata": {
+    "description": "Local fork - dev-browser-opera",
+    "version": "1.0.1"
+  }
+}

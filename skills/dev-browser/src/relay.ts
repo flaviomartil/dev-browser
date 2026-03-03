@@ -127,7 +127,7 @@ export async function serveRelay(options: RelayOptions = {}): Promise<RelayServe
   // ============================================================================
 
   function log(...args: unknown[]) {
-    console.log("[relay]", ...args);
+    console.error("[relay]", ...args);
   }
 
   function sendToPlaywright(message: CDPResponse | CDPEvent, clientId?: string) {
@@ -648,7 +648,7 @@ export async function serveRelay(options: RelayOptions = {}): Promise<RelayServe
           // Handle log messages
           if ("method" in message && message.method === "log") {
             const { level, args } = message.params;
-            console.log(`[extension:${level}]`, ...args);
+            console.error(`[extension:${level}]`, ...args);
             return;
           }
 
